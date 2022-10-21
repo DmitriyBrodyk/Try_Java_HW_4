@@ -6,14 +6,14 @@ public class Main {
         Lecture English = new Lecture(223,"/ Past Simple", 2,"Work Hard All Day", "Drink Energetics");
         Lecture Other1 = new Lecture(311,"/ World Trands", 1,"Work Hard All Day", "Drink Energetics");
 
-<<<<<<< HEAD
-        Lecture HomeWork_52_2 = new Lecture(1,"2", 1, "1","1");
-=======
-        // Home Work 5.2 add 2 new classes
-        Lecture HomeWork_52_1 = new Lecture(1,"1", 1, "1","1");
+
         Lecture HomeWork_52_2 = new Lecture(1,"2", 1, "1","1");
 
->>>>>>> feature
+        // Home Work 5.2 add 2 new classes
+        Lecture HomeWork_52_1 = new Lecture(1,"1", 1, "1","1");
+
+
+
         Lecture.printQ();
     }
 }
