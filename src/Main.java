@@ -1,11 +1,11 @@
-import Lessons.Cours;
+import Lessons.Course;
 import Lessons.Lecture;
 
 public class Main {
     public static void main(String[] args) {
         // 1
-        Cours cours1 = new Cours(33);
-        Lecture math1 = new Lecture( cours1.IDCurs,1);
+        Course course1 = new Course(33);
+        Lecture math1 = new Lecture( course1.courseID,1);
         // 2
         Lecture math2 = new Lecture( 2,2);
         //3

@@ -1,10 +1,10 @@
 package Services;
 
-import Lessons.Cours;
+import Lessons.Course;
 
 public class ServiceCours {
-    Cours creatCours(){
-        return new Cours();
+    Course creatCours(){
+        return new Course();
     }
 
 }

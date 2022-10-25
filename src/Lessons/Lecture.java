@@ -1,20 +1,20 @@
 package Lessons;
 
 public class Lecture {
-    private int IDLecture;
+    private int lectureID;
     private static int count;
-    public int IDCurs;
+    public int courseID;
 
-    public Lecture ( int IDLecture){
+    public Lecture ( int lectureID){
         count ++;
-        this.IDLecture = IDLecture;
-        System.out.println("Id Lecture- "+ IDLecture );
+        this.lectureID = lectureID;
+        System.out.println("Id Lecture- "+ lectureID );
     }
 
-    public Lecture ( int IDCurs, int IDLecture){
+    public Lecture ( int courseID, int lectureID){
         count ++;
-        this.IDLecture = IDLecture;
-        this.IDCurs = IDCurs;
+        this.lectureID = lectureID;
+        this.courseID = courseID;
 //        System.out.println("Id Curs- "+ IDCurs + " Id Lecture- "+ IDLecture );
     }
 
@@ -25,6 +25,6 @@ public class Lecture {
         System.out.println("Всего было создано объектов лекций = " + count );
     }
     public void printLecture(){
-        System.out.println("Id Curs - "+ IDCurs + " | Id Lecture - "+ IDLecture);
+        System.out.println("Id Curs - "+ courseID + " | Id Lecture - "+ lectureID);
     }
 }
