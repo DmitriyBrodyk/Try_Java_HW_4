@@ -1,19 +1,25 @@
+import Lessons.Cours;
 import Lessons.Lecture;
 
 public class Main {
     public static void main(String[] args) {
-        Lecture Math = new Lecture(1134,"/ How use ++", 1,"Work Hard All Day", "Drink Energetics");
-        Lecture English = new Lecture(223,"/ Past Simple", 2,"Work Hard All Day", "Drink Energetics");
-        Lecture Other1 = new Lecture(311,"/ World Trands", 1,"Work Hard All Day", "Drink Energetics");
+        // 1
+        Cours cours1 = new Cours(33);
+        Lecture math1 = new Lecture( cours1.IDCurs,1);
+        // 2
+        Lecture math2 = new Lecture( 2,2);
+        //3
+        Lecture math3 = new Lecture( 3,3);
+        //4
+        Lecture math4 = new Lecture( 4,4);
+        //5
+        Lecture math5 = new Lecture( 5,5);
+        //6
+        Lecture math6 = new Lecture(666, 6);
+        math6.printLecture();
 
 
-        Lecture HomeWork_52_2 = new Lecture(1,"2", 1, "1","1");
 
-        // Home Work 5.2 add 2 new classes
-        Lecture HomeWork_52_1 = new Lecture(1,"1", 1, "1","1");
-
-
-
-        Lecture.printQ();
+        Lecture.printCount();
     }
 }

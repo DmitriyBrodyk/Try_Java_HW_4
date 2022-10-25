@@ -1,7 +1,7 @@
 package Lessons;
 
 public class Cours {
-    private int id;
+    public int  IDCurs;
     private String nameCours;
     private Teachers teacher;
     private Students students;
@@ -10,6 +10,11 @@ public class Cours {
     private AddTask addTask;
 
     public Cours(){
+    }
+
+    public Cours(int IDCurs){
+        this.IDCurs = IDCurs;
+//        System.out.println("Id Cours- "+ IDCurs);
     }
 
 }
