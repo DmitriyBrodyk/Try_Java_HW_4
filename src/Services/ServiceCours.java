@@ -1,6 +1,6 @@
 package Services;
 
-import Lessons.Course;
+import models.Course;
 
 public class ServiceCours {
     Course creatCours(){

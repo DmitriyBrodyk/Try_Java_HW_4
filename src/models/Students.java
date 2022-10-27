@@ -1,4 +1,4 @@
-package Lessons;
+package models;
 
 public class Students {
     private String firstName;

@@ -1,7 +1,7 @@
 package Services;
 
 
-import Lessons.AddTask;
+import models.AddTask;
 
 public class ServiceAddTask {
 

@@ -1,6 +1,6 @@
 package Services;
 
-import Lessons.Students;
+import models.Students;
 
 public class ServiceStudents {
     public static void main(String[] args) {

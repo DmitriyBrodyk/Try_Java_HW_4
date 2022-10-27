@@ -1,13 +1,12 @@
-package Lessons;
+package models;
 
-public class AddTask {
+public class HomeWork {
     private int Id;
     private String name;
 
-    public AddTask(int Id, String name){
+    public HomeWork(int Id, String name){
         this.Id = Id;
         this.name = name;
 
     }
-
 }
