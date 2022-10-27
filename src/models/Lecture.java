@@ -51,9 +51,11 @@ public class Lecture {
                         cikl(1);
                     case 2:
                         genre23=3;
+                        System.out.println("Конец");
                         break;
                     default:
                         genre23=3;
+                        System.out.println("Конец");
                         break;
 
                 }

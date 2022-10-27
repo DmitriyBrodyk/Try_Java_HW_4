@@ -16,52 +16,54 @@ public class Main {
 
         int genre = scanner.nextInt();
 
-        switch (genre)
+        switch (genre)  //Выбираем категорию
         {
+            // главная категория Курс
             case 1:
-                System.out.println("Выбронна категория |Курс| ");
-                System.out.println("Дополнительно выберите: 1 - Преподователь, 2 - Студент, 3 - Лекция");
-                int genre1 = scanner.nextInt();
-                switch (genre1)
-                {
+            System.out.println("Выбронна категория |Курс| ");
+            System.out.println("Дополнительно выберите: 1 - Преподователь, 2 - Студент, 3 - Лекция");
+            int genre1 = scanner.nextInt();
+
+            switch (genre1) //Выбираем под-категорию
+            {
                     case 1:
-                        System.out.println("Дополнительно выбронна  категория |Преподователь|");
-                        break;
+                    System.out.println("Дополнительно выбронна  категория |Преподователь|");
+                    break;
                     case 2:
-                        System.out.println("Дополнительно выбронна категория |Студент|");
-                        break;
+                    System.out.println("Дополнительно выбронна категория |Студент|");
+                    break;
                     case 3:
-                        System.out.println("Дополнительно выбронна  категория |Лекция|");
-                        System.out.println("Жилаете создать новую лекцию?");
-                        System.out.println("1 - Да");
-                        System.out.println("2 - Нет");
-                        int genre2 = scanner.nextInt();
+                    System.out.println("Дополнительно выбронна  категория |Лекция|");
+                    System.out.println("Жилаете создать новую лекцию?");
+                    System.out.println("1 - Да");
+                    System.out.println("2 - Нет");
+                    int genre2 = scanner.nextInt();
 
-                        switch (genre2)
-                        {
-                            case 1:
-                                System.out.println("Введите id Курса - ");
-                                int curseIDInside = scanner.nextInt();
-
-                                System.out.println("Введите id Лекции - ");
-                                int lectureIDInside = scanner.nextInt();
-
-                                Lecture lecture = new Lecture(curseIDInside,lectureIDInside );
-
-                                System.out.println("id Курса "+ lecture.courseID  + " id Лекции " + lecture.lectureID);
-                                System.out.println("Создать еще?");
-                                System.out.println("1 - Yes ");
-                                System.out.println("2 - No ");
-                                int genre23 = scanner.nextInt();
-                                Lecture.cikl(genre23);
-                                break;
-                            case 2:
-                                System.out.println("Конец");
-                                break;
+                    switch (genre2) //Выбрана под категория лекция => //Выбор создавать лекцию или нет
+                    {
+                        // Создание леции
+                    case 1:
+                    System.out.println("Введите id Курса - ");
+                    int curseIDInside = scanner.nextInt();
+                    System.out.println("Введите id Лекции - ");
+                    int lectureIDInside = scanner.nextInt();
+                    Lecture lecture = new Lecture(curseIDInside,lectureIDInside );
+                    System.out.println("id Курса "+ lecture.courseID  + " id Лекции " + lecture.lectureID);
+                    System.out.println("Создать еще?");
+                    System.out.println("1 - Yes ");
+                    System.out.println("2 - No ");
+                    int genre23 = scanner.nextInt();
+                    Lecture.cikl(genre23);
+                    break;
+                        //Отмена создания
+                    case 2:
+                    System.out.println("Конец");
+                    break;
                         }
                         break;
                 }
                 break;
+            // главная категория Лекции
             case 2:
                 System.out.println("Выбронна категория |Лекции| ");
                 System.out.println("Жилаете создать новую лекцию?");
@@ -69,8 +71,9 @@ public class Main {
                 System.out.println("2 - Нет");
                 int genre2 = scanner.nextInt();
 
-                    switch (genre2)
+                    switch (genre2) //Выбор создавать лекцию или нет
                 {
+                    // Создание леции
                     case 1:
                         System.out.println("Введите id Курса - ");
                         int curseIDInside = scanner.nextInt();
@@ -88,15 +91,18 @@ public class Main {
                         Lecture.cikl(genre23);
 
                         break;
+                        //Отмена создания
                     case 2:
                         System.out.println("Конец");
                         break;
 
                 }
                 break;
+            // главная категория Студенты
             case 3:
                 System.out.println("Выбронна категория |Студенты| ");
                 break;
+            // главная категория Преподователи
             case 4:
                 System.out.println("Выбронна категория |Преподователи| ");
                 break;
