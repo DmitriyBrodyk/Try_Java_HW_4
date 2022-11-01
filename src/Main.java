@@ -8,7 +8,6 @@ public class Main {
 
         int a = 0;
         do {
-
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите номер необходимой категории:");
             System.out.println("1 - Курс");
@@ -19,15 +18,15 @@ public class Main {
 
             int genre = scanner.nextInt();
 
-            switch (genre)  //Выбираем категорию
+            switch (genre)  //choose category
             {
-                // главная категория Курс
+                // Category Course
                 case 1:
                     System.out.println("Выбронна категория |Курс| ");
                     System.out.println("Дополнительно выберите: 1 - Преподователь, 2 - Студент, 3 - Лекция, 4 - закончить программу");
                     int genre1 = scanner.nextInt();
 
-                    switch (genre1) //Выбираем под-категорию
+                    switch (genre1) //second level of Course
                     {
                         case 1:
                             System.out.println("Дополнительно выбронна  категория |Преподователь|");
@@ -42,9 +41,9 @@ public class Main {
                             System.out.println("2 - Нет");
                             int genre2 = scanner.nextInt();
 
-                            switch (genre2) //Выбрана под категория лекция => //Выбор создавать лекцию или нет
+                            switch (genre2) //choose make new Lecture or no
                             {
-                                // Создание леции
+                                // make new Lecture
                                 case 1:
                                     System.out.println("Введите id Курса - ");
                                     int curseIDInside = scanner.nextInt();
@@ -58,7 +57,7 @@ public class Main {
                                     int genre23 = scanner.nextInt();
                                     Lecture.cikl(genre23);
                                     break;
-                                //Отмена создания
+                                //Exit program
                                 case 2:
                                     System.out.println("Конец");
                                     break;
@@ -68,12 +67,11 @@ public class Main {
                             a=8;
                             break;
                         default:
-
                             System.out.println("Что-то пошло не так, попробуйте ввести корректное число");
                             break;
                     }
                     break;
-                // главная категория Лекции
+                // main category of Lecture
                 case 2:
                     System.out.println("Выбронна категория |Лекции| ");
                     System.out.println("Жилаете создать новую лекцию?");
@@ -81,9 +79,9 @@ public class Main {
                     System.out.println("2 - Нет");
                     int genre2 = scanner.nextInt();
 
-                    switch (genre2) //Выбор создавать лекцию или нет
+                    switch (genre2) //choose make new Lecture or no
                     {
-                        // Создание леции
+                        // make new Lecture
                         case 1:
                             System.out.println("Введите id Курса - ");
                             int curseIDInside = scanner.nextInt();
@@ -99,33 +97,30 @@ public class Main {
                             System.out.println("2 - No ");
                             int genre23 = scanner.nextInt();
                             Lecture.cikl(genre23);
-
                             break;
-
                         case 2:
                             System.out.println("Конец");
                             break;
                         default:
-
                             System.out.println("Что-то пошло не так, попробуйте ввести корректное число");
                             break;
 
                     }
                     break;
-                // главная категория Студенты
+                // main choose students
                 case 3:
                     System.out.println("Выбронна категория |Студенты| ");
                     break;
-                // главная категория Преподователи
+                // main choose teacher
                 case 4:
                     System.out.println("Выбронна категория |Преподователи| ");
                     break;
                 case 5:
-
+                    //Exit program
                     a=8;
                     break;
+                    //controll of corrects numbers
                 default:
-
                     System.out.println("Что-то пошло не так, попробуйте ввести корректное число");
                     break;
 
