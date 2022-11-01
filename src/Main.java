@@ -6,9 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        boolean programmWorking = true;
         int a = 0;
-
         do {
 
             Scanner scanner = new Scanner(System.in);
@@ -128,7 +126,7 @@ public class Main {
                     break;
                 default:
 
-                    System.out.println("Что-то пошло не так, попробуйте заново");
+                    System.out.println("Что-то пошло не так, попробуйте ввести корректное число");
                     break;
 
             }

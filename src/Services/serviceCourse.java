@@ -2,7 +2,7 @@ package Services;
 
 import models.Course;
 
-public class ServiceCours {
+public class serviceCourse {
     Course creatCours(){
         return new Course();
     }
