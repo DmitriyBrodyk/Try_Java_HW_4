@@ -18,7 +18,8 @@ public class Main {
 
             int genre = scanner.nextInt();
 
-            switch (genre)  //choose category
+            //choose category
+            switch (genre)
             {
                 // Category Course
                 case 1:
@@ -26,7 +27,8 @@ public class Main {
                     System.out.println("Дополнительно выберите: 1 - Преподователь, 2 - Студент, 3 - Лекция, 4 - закончить программу");
                     int genre1 = scanner.nextInt();
 
-                    switch (genre1) //second level of Course
+                    //second level of Course
+                    switch (genre1)
                     {
                         case 1:
                             System.out.println("Дополнительно выбронна  категория |Преподователь|");
@@ -41,7 +43,8 @@ public class Main {
                             System.out.println("2 - Нет");
                             int genre2 = scanner.nextInt();
 
-                            switch (genre2) //choose make new Lecture or no
+                            //choose make new Lecture or no
+                            switch (genre2)
                             {
                                 // make new Lecture
                                 case 1:
@@ -57,6 +60,7 @@ public class Main {
                                     int genre23 = scanner.nextInt();
                                     Lecture.cikl(genre23);
                                     break;
+
                                 //Exit program
                                 case 2:
                                     System.out.println("Конец");
@@ -79,7 +83,8 @@ public class Main {
                     System.out.println("2 - Нет");
                     int genre2 = scanner.nextInt();
 
-                    switch (genre2) //choose make new Lecture or no
+                    //choose make new Lecture or no
+                    switch (genre2)
                     {
                         // make new Lecture
                         case 1:

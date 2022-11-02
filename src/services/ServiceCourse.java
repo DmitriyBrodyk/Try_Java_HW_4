@@ -1,8 +1,8 @@
-package Services;
+package services;
 
 import models.Course;
 
-public class serviceCourse {
+public class ServiceCourse {
     Course creatCours(){
         return new Course();
     }

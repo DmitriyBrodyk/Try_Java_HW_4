@@ -1,9 +1,9 @@
-package Services;
+package services;
 
 
 import models.AddTask;
 
-public class serviceAddTask {
+public class ServiceAddTask {
 
     public static void main(String[] args) {
         AddTask at1 = new AddTask(1, "English for junior");

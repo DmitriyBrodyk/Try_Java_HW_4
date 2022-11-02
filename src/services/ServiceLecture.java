@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-public class serviceLecture {
+public class ServiceLecture {
     public static void main(String[] args) {
 
     }

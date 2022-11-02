@@ -1,8 +1,8 @@
-package Services;
+package services;
 
 import models.Teachers;
 
-public class serviceTeachers {
+public class ServiceTeachers {
     public static void main(String[] args) {
         Teachers tch1 = new Teachers(1);
         Teachers tch2 = new Teachers(112);
